@@ -1,0 +1,105 @@
+/*Extra large Device 1200px */
+@media only screen and (min-width: 1200px){
+    .drawer-menu-start{
+        display: none
+    }
+}
+
+/*large Device 992px 1199px*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .drawer-menu-start{
+        display: none
+    }
+}
+
+/*Tablet Device 768px 991px*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .drawer-menu-start{
+        display: none
+    }
+    .menu-area-start{
+        width: 90%
+    }
+    .single-portfolio{
+        z-index: -1
+    }
+    .df-pad {
+        padding: 40px 0px;
+    }
+    .project-title h1{
+        font-size: 29px
+    }
+    .project-title h1:before{
+        top: 37px
+    }
+    .profile-image{
+        height: 300px
+    }
+    .biodata-content h2 {
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .biodata-content p {
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .information-text p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    .df-btn {
+        padding: 5px 14px;
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .single-service-area {
+        min-height: 220px;
+        max-height: 220px;
+    }
+    .df-box {
+        padding: 27px 6px;
+    }
+    .single-service-area i{
+        font-size: 45px
+    }
+    .filter-button-group button{
+        padding: 4px 10px
+    }
+    .single-portfolio{
+        height: 250px
+    }
+    .single-review i{
+        font-size: 35px
+    }
+    .single-review span{
+        font-size: 45px
+    }
+    .single-blog-area .blog-image>span{
+        z-index: 0
+    }
+}
+
+/*Small Mobile 576px 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .all-are-included.sticky.fixed, .all-are-included.sticky{
+        display: none!important
+    }
+    .df-pad {
+        padding: 10px 0px!importent ;
+    }
+    .blog-area-start img {
+    width: 450px;
+    height: 225px;
+    }
+}
+
+/*Extra Small Mobile Devices 0px 575px */
+@media only screen and (max-width: 575px){
+    .all-are-included.sticky.fixed, .all-are-included.sticky{
+        display: none!important
+    }
+    .df-pad {
+        padding: 10px 0px!importent ;
+    }
+}

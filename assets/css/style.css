@@ -1,0 +1,532 @@
+/*
+*
+* Author Name: Md. Arifuzzaman
+* Version 1.0.0
+* Author URI: marifuzzaman.info
+* Description: This is new css code
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+/*Browser Reset code*/
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+/* default CSS */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover, a:active, a:link, a:visited{
+    text-decoration: none
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,a:hover,a:focus,button,button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+ul{
+    list-style: none
+}
+img{
+    width: 100%;
+    height: 100%
+}
+.df-color{
+    color: #000000
+}
+.custom-color{
+    color: #e65f78
+}
+.df-box{
+    border: 1px solid #000000;
+    padding: 13px 17px;
+    text-align: center
+}
+.df-box:hover{
+    background: #000000;
+    opacity: 0.7;
+    color: #ffffff
+}
+.df-btn{
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 28px;
+    padding: 14px 20px;
+    letter-spacing: 1.3px;
+}
+p{
+    color: #6c757d!important
+}
+.df-pad{
+    padding: 120px 0px 0px 0px
+}
+/*Preloader CSS*/
+.loader-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+    background: #9B59B6
+}
+.loader-bg .loader{
+    border: 0px solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, loader:after{
+    content: '';
+    position: absolute;
+    border: 1em solid #ffffff;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    animation: load-animate 2s linear infinite
+}
+.loader:before{
+    animation-delay: .5s
+}
+@keyframes load-animate{
+    0%{
+        transform: scale(0);
+        opacity: 0
+    }
+    50%{
+        opacity: 1
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+/*Attractive CSS*/
+
+.attractive-area-start{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.attractive-area-start:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000000;
+    z-index: -2;
+    opacity: 0.7
+}
+.downloadcv{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+.df-bad{
+    width: 100%;
+    height: 700px;
+}
+
+/*Menu CSS*/
+.all-are-included{
+    width: 100%
+}
+.all-are-included.sticky{
+}
+.all-are-included.sticky.fixed {
+    background: #9B59B6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px 150px;
+    display: block!important;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    animation: fadeInDown 1s both
+}
+.all-are-included.sticky.fixed .menu-area-start ul.main-menu {
+    margin-bottom: 0px;
+}
+.all-are-included.sticky.fixed .menu-area-start a, .logo {
+    padding: 14px;
+    color: #fff;
+}
+/*navbar CSS*/
+.navbar-area-start{
+    width: 100%;
+    height: auto;
+    padding: 10px
+}
+.custom-nav .navbar-nav li a, .logo {
+    color: #fff !important;
+    font-size: 15px;
+    background-color: transparent !important;
+    margin: 0 7px;
+    letter-spacing: 0.05em;
+    line-height: 24px;
+    transition: all 0.5s;
+    font-weight: 500;
+}
+.custom-nav .navbar-brand {
+    color: #000000 !important;
+    text-transform: uppercase;
+}
+.custom-nav .navbar-toggler {
+    color: #000000;
+    font-size: 35px;
+    padding: 0px;
+}
+.custom-nav.stickyadd{
+    background-color: #fff !important;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.050980392156862744);
+    padding: 15px 0px;
+}
+.custom-nav.stickyadd .navbar-nav li a{
+    color: #000 !important;
+}
+/*===========================
+        4.HOME
+=============================*/
+
+.header-table-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.header-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.header-name {
+    font-size: 54px;
+}
+.header-desc, .logo {
+    max-width: 500px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.menu-area-start{
+    width: 94%;
+    height: auto;
+    text-align: right
+}
+.menu-area-start ul li{
+    display: inline-block
+}
+.menu-area-start ul li a, .logo{
+    display: inline-block;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #D9D9DA
+}
+.menu-area-start ul li.active a, .logo {
+    color: #bdc3c7!important;
+}
+.attractive-body-area{
+    width: 100%;
+    height: 87vh;;
+    display: table
+}
+.attractive-content{
+    display: table-cell;
+    width: 100%;
+    height: 87vh;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff
+}
+.attractive-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px
+}
+.attractive-content>span{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    padding: 20px 0px
+}
+.attractive-content p{    
+    padding: 20px 0px
+}
+/* about area start */
+.about-area{
+    padding: 0px;
+    margin: 0px;
+}
+.pad{
+    padding-top: 20px
+}
+.about-area p{
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+}
+.about-social li a {
+    color: #000;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    line-height: 38px;
+    transition: all 0.5s;
+    text-align: center;
+}
+/* service area */
+
+.service-area-start p{
+    padding-bottom: 85px;
+    padding-top: 20px
+}
+
+.single-service-area i{
+    font-size:45px;    
+}
+.single-service-area h4{
+    font-size: 25px;
+    padding: 10px 0px;   
+}
+/* hire area */
+.hire-area{
+    text-align: center
+}
+.hire-area h2{
+    padding: 0px 0px 20px 0px
+}
+
+/* client area */
+
+.client-area-start p{
+    padding: 20px 0px 0px 0px
+}
+.single-testi-area img{
+    padding: 3px;
+    border: 1px solid #ffffff;
+    width: 90px!important;
+    height: 90px;
+    display: block;
+    margin: 0px auto
+}
+.single-testi-area strong{
+    display: block;
+    margin: 15px 0px 5px 0px;
+    font-size: 18px
+}
+.single-testi-area span{
+    font-size: 14px;
+     color: #393939;
+}
+/* === Portfoli area Start === */
+.portfolio-filter{}
+.portfolio-filter button{
+    background: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+.portfolio-filter button:focus{
+    color: #2ECC71;
+    outline: none;
+}
+#my-portfolio .port-wrap{
+    width: 32%;
+    float: left;
+    margin: .58%;
+}
+.port-wrap img{
+    max-width: 100%;
+}
+.single-portfolio-item{
+    position: relative;
+}
+.portfoli-hover-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.80);
+    display: table;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: .3s ease-in-out;
+}
+.single-portfolio-item:hover .portfoli-hover-content{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.portfoli-hover-content .portfoilo-hover-text{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+/* blog area start */
+.blog-area-start img{
+    width: 335px;
+    height: 225px
+}
+.child{
+    padding: 20px 0px
+}
+.blog-area-start .single-blog h4>a{
+    font-size:20px;
+    line-height: 2;
+    color: #000000;
+    display: inline-block
+}
+.blog-area-start .single-blog h5{
+    font-size:14px;
+    line-height: 2;
+    color: #000000;
+    display: inline-block
+}
+.blog-area-start .single-blog p{
+    font-size:14px;
+    color: #000000;
+}
+.blog-area-start .single-blog p>a{
+    font-size:14px;
+    color: #000000;
+}
+/*===========================
+        8.WORK
+=============================*/
+.work_menu li a {
+    cursor: pointer;
+    display: block;
+    border-radius: 30px;
+    letter-spacing: 0.03em;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 16px;
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+.work_menu a.active, .work_menu a:hover {
+    color: #0062cc !important;
+}
+.work_item {
+    position: relative;
+    padding: 15px;
+}
+.work_box {
+    overflow: hidden;
+    position: relative;
+}
+.work_box .work_img {
+    position: relative;
+    overflow: hidden;
+}
+.work_box .work_img:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.work_box .work_img>img {
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+    border-radius: 0;
+}
+.work_box .work_detail {
+    opacity: 0;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.work_box .work_detail h4 {
+    font-size: 18px;
+}
+.work_box .work_detail p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.work_box:hover .work_detail {
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+.work_box:hover .work_img:after {
+    background: rgba(0, 0, 0, 0.8);
+}
+.work_box:hover .work_img>img {
+    transform: scale(1.05);
+}
+/*======================
+        10.FOOTER
+========================*/
+.footer {
+    padding: 70px 0px;
+    background-color: #242424 !important;
+}
+.footer .footer-alt p {
+    font-size: 16px;
+}
+.footer .footer-alt ul li a {
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-color: rgba(241, 241, 241, 0.08);
+    width: 42px;
+    height: 42px;
+    display: block;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+}
